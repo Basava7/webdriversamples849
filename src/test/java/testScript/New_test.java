@@ -14,7 +14,7 @@ public class New_test {
 	  WebDriver driver=new ChromeDriver();
 	  driver.get("https://testautomationpractice.blogspot.com/");
 	  driver.manage().window().maximize();
-	  List<WebElement> Items= driver.findElements(By.xpath("//td[contains(text(),'Master In Selenium')]//following::td"));
+	  List<WebElement> Items= driver.findElements(By.xpath("//td[contains(text(),'Master In cocumber')]//following::td"));
 	  for (WebElement item:Items){
 		  System.out.println(item.getText());
 	  }
